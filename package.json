@@ -1,0 +1,25 @@
+{
+  "name": "webpack-asset-map",
+  "version": "1.0.0",
+  "description": "A very small Webpack plugin for creating a JSON file describing bundled assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelboberg/webpack-asset-map.git"
+  },
+  "keywords": [
+    "webpack",
+    "assets",
+    "map",
+    "json"
+  ],
+  "author": "Axel Boberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axelboberg/webpack-asset-map/issues"
+  },
+  "homepage": "https://github.com/axelboberg/webpack-asset-map#readme"
+}

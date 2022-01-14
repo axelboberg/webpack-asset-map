@@ -1,6 +1,6 @@
 {
   "name": "webpack-asset-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very small Webpack plugin for creating a JSON file describing bundled assets",
   "main": "index.js",
   "scripts": {

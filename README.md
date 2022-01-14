@@ -32,3 +32,10 @@ Type: `String`
 Default: The output-path specified in webpack.config.js  
   
 The relative path from `webpack.config.js` to the directory where the JSON-file will be created. Will overwrite if the file already exists.
+
+#### `options.data?`
+
+Type: `Object`  
+Default: An empty object
+
+Additional data to be written to the file, can be used to overwrite existing values

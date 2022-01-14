@@ -13,7 +13,8 @@ let _options = {
   path: null, // Where to place the asset-map file: Will use the output defined in the compiler by default
   webpack: {
     output: null // Where the bundled files are located: Will be set inside the compiler-hook
-  }
+  },
+  data: {} // Additional data to write to the file, can be used to overwrite existing values
 }
 
 function plugin (options) {
@@ -50,7 +51,8 @@ plugin.prototype.apply = function (compiler) {
   compiler.hooks.done.tap('webpack-asset-map', stats => {
     const fileData = JSON.stringify({
       hash: stats.compilation.hash,
-      assets: Object.keys(stats.compilation.assets)
+      assets: Object.keys(stats.compilation.assets),
+      ..._options.data
     })
 
     /**
